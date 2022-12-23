@@ -1,0 +1,209 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+ul,
+li {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+	margin: 0;
+	padding: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+	list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+	scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+	min-height: 100vh;
+	text-rendering: optimizeSpeed;
+	line-height: 1.5;
+	font-family: "Anton", sans-serif;
+	font-family: "Open Sans", sans-serif;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+	text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+	max-width: 100%;
+	display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+	font: inherit;
+}
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+	html:focus-within {
+		scroll-behavior: auto;
+	}
+	*,
+	*::before,
+	*::after {
+		animation-duration: 0.01ms !important;
+		animation-iteration-count: 1 !important;
+		transition-duration: 0.01ms !important;
+		scroll-behavior: auto !important;
+	}
+}
+.container {
+	width: 1170px;
+	margin: 0 auto; /* позиционирование по центру*/
+}
+.header {
+	background: url(../img/header-bg.jpg) no-repeat center top / cover;
+	padding-top: 57px;
+	padding-bottom: 339px;
+}
+header a {
+	color: #fff;
+}
+.logo {
+	margin-right: 69px;
+}
+.menu {
+	display: flex;
+}
+.menu li a {
+	text-transform: uppercase;
+	text-decoration: none;
+	font-size: 14px;
+	letter-spacing: 0.1em;
+}
+.menu li {
+	margin-right: 40px;
+}
+.tel {
+	font-size: 17px;
+	margin-left: auto;
+	text-decoration: none;
+	letter-spacing: 0.1em;
+}
+.nav {
+	display: flex;
+	align-items: center;
+	padding-top: 57px;
+}
+.header__info {
+	margin-top: 229px;
+}
+.header__subtitle {
+	font-size: 30px;
+	letter-spacing: 0.1em;
+	line-height: 45px;
+	color: #fff;
+}
+.header__title {
+	margin-bottom: 19px;
+	margin-top: -9px;
+	font-weight: 400;
+	font-size: 100px;
+	line-height: 151px;
+	color: #fff;
+}
+
+.btn {
+	font-size: 17px;
+	line-height: 26px;
+	padding: 17px 47px;
+	border: 1px solid #fff;
+	text-align: center;
+	letter-spacing: 0.1em;
+	width: 238px;
+	text-decoration: none;
+}
+.about {
+	margin-top: 115px;
+}
+.about__title {
+	font-weight: 400;
+	font-size: 50px;
+	line-height: 75px;
+	color: #000000;
+	text-transform: uppercase;
+}
+.about__info {
+	padding-top: 58px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	text-transform: uppercase;
+}
+.about__subtitle {
+	font-weight: 400;
+	margin-right: 300px;
+	margin-bottom: 19px;
+	font-size: 25px;
+	line-height: 38px;
+	text-transform: uppercase;
+	color: #000000;
+	white-space: nowrap;
+}
+.about__text {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 26px;
+	text-align: justify;
+	margin-right: 30px;
+	color: #000000;
+}
+.about__img {
+	margin-top: 84px;
+	display: flex;
+}
+.img {
+	margin-right: 29px;
+}
+.footer {
+	margin-top: 115px;
+}
+.footer__info {
+	display: flex;
+	align-items: center;
+}
+.footer__copyright {
+	margin-right: 59px;
+	font-weight: 400;
+	font-size: 15px;
+	line-height: 20px;
+	color: #000000;
+}
+.creator {
+	font-weight: 400;
+	font-size: 15px;
+	line-height: 20px;
+	color: #000000;
+}
